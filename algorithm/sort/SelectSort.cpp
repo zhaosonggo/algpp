@@ -1,6 +1,3 @@
-#include<iostream>
-using namespace std;
-
 void SelectSort(int *data, int n)
 {
     for(int i=0;i<n-1;i++){
@@ -15,13 +12,4 @@ void SelectSort(int *data, int n)
         data[index] = data[i];
         data[i] = tmp;
     }
-}
-int main()
-{
-    int data[10] = {2, 3, 1, 0, 0, 312, 2, 3, 4, 2};
-    SelectSort(data, 10);
-    for(int i = 0;i<10;i++){
-        cout<<data[i]<<" ";
-    }
-    return 0;
 }
