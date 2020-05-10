@@ -1,6 +1,3 @@
-#include<iostream>
-#include"tool.h"
-using namespace std;
 void insertSort(int *data, int n)
 {
     for(int i = 1; i<n;i++){
@@ -15,16 +12,4 @@ void insertSort(int *data, int n)
         }
         data[j] = tmp;
     }
-}
-
-int main()
-{
-    // int data[] = {8, 3, 2, 1, 54, 2, 3, 4, 5,12, 3, 4,8, 3, 2, 1, 54, 2, 3, 4, 5,12, 3, 4};
-    // insertSort(data, 24);
-    // for(int i=0;i<24; i++){
-    //     cout<<data[i]<<", ";
-    // }
-    // cout<<endl;
-    test(insertSort);
-    return 0;
 }
